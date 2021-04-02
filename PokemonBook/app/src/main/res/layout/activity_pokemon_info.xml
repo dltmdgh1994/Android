@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    android:orientation="vertical"
+    tools:context=".Pokemon_Info">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pokemonInfoImg"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/skill" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_red_light"
+                android:text="기본 정보"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumsquareroundr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="이름"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoName2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="타입"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoType2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoCandy"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="진화비용"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoCandy2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoCp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="최대CP"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoCp2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoAtt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="공격력"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoAtt2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoDep"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="방어력"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoDep2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoHel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="체력"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoHel2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pokemonInfoPro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#80FF4444"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="포획확률"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <TextView
+                            android:id="@+id/pokemonInfoPro2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/customtextview2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/holo_red_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="통상 공격"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/pokemonInfoRecycler1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/holo_red_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="특수 공격"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/nanumsquareroundr" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/pokemonInfoRecycler2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_red_light"
+                android:text="타입 상성표(공격 받을 시)"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumsquareroundr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/normalTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/normal"
+                                android:gravity="center_horizontal"
+                                android:text="노말"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/normalTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/PoisonTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/poison"
+                                android:gravity="center_horizontal"
+                                android:text="독"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/PoisonTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/bugTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/bug"
+                                android:gravity="center_horizontal"
+                                android:text="벌레"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/bugTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fireTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/fire"
+                                android:gravity="center_horizontal"
+                                android:text="불꽃"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/fireTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/elecTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/electric"
+                                android:gravity="center_horizontal"
+                                android:text="전기"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/elecTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dragonTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/dragon"
+                                android:gravity="center_horizontal"
+                                android:text="드래곤"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="14sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/dragonTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fightTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/fighting"
+                                android:gravity="center_horizontal"
+                                android:text="격투"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/fightTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/groundTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/ground"
+                                android:gravity="center_horizontal"
+                                android:text="땅"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/groundTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ghostTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/ghost"
+                                android:gravity="center_horizontal"
+                                android:text="고스트"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="14sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/ghostTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/waterTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/water"
+                                android:gravity="center_horizontal"
+                                android:text="물"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/waterTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/esperTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/esper"
+                                android:gravity="center_horizontal"
+                                android:text="에스퍼"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="14sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/esperTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/darkTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/dark"
+                                android:gravity="center_horizontal"
+                                android:text="악"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/darkTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/flyTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/flying"
+                                android:gravity="center_horizontal"
+                                android:text="비행"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/flyTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/rockTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/rock"
+                                android:gravity="center_horizontal"
+                                android:text="바위"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/rockTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ironTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/iron"
+                                android:gravity="center_horizontal"
+                                android:text="강철"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/ironTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/plantTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/plant"
+                                android:gravity="center_horizontal"
+                                android:text="풀"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/plantTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/iceTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/ice"
+                                android:gravity="center_horizontal"
+                                android:text="얼음"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/iceTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fairyTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview"
+                                android:drawableLeft="@drawable/fairy"
+                                android:gravity="center_horizontal"
+                                android:text="페어리"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="14sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+
+                            <TextView
+                                android:id="@+id/fairyTextView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/customtextview2"
+                                android:gravity="center_horizontal"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                app:fontFamily="@font/nanumsquareroundr" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pokemonInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/customtextview"
+        android:text="닫기"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Skill_Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="기본 정보"
+            android:textColor="#FFFFFFFF"
+            android:textSize="23sp"
+            app:fontFamily="@font/nanumsquareroundr" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="이름"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Dps"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoDps"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="타입"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="분류"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="위력"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoPower"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Eps"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoEps"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#80FF4444"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="발동 시간"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+
+                    <TextView
+                        android:id="@+id/SkillInfoTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customtextview2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/nanumsquareroundr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_red_light"
+            android:text="보유 포켓몬"
+            android:textColor="#FFFFFFFF"
+            android:textSize="23sp"
+            app:fontFamily="@font/nanumsquareroundr" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skillInfoRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/skillInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/customtextview"
+        android:text="닫기"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

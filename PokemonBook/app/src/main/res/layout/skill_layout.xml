@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffffff"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/skill_in_recycler_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/font" />
+
+            <TextView
+                android:id="@+id/skill_layout_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="type"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/font" />
+
+            <TextView
+                android:id="@+id/skill_layout_sort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="sort"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/font" />
+
+            <TextView
+                android:id="@+id/skill_layout_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="power"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/nanumsquareroundr" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btab1"
+        android:enabled="true"
+        android:icon="@drawable/ebook"
+        android:title="포켓몬 도감"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btab2"
+        android:enabled="true"
+        android:icon="@drawable/skill"
+        android:title="스킬 도감"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btab3"
+        android:enabled="true"
+        android:icon="@drawable/swords"
+        android:title="상성표"
+        app:showAsAction="ifRoom" />
+
+</menu>
